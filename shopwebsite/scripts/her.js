@@ -1,10 +1,10 @@
 /*eslint-env browser*/
 function hover(element) {
-        element.setAttribute('src', 'images/products/'+element.id+'a.jpg');
+        element.setAttribute('src', './images/products/'+element.id+'a.jpg');
     }
 
 function unhover(element) {
-        element.setAttribute('src', 'images/products/'+element.id+'.jpg' );
+        element.setAttribute('src', './images/products/'+element.id+'.jpg' );
     }
 
 $(function(){
