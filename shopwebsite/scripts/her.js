@@ -1,6 +1,6 @@
 /*eslint-env browser*/
 function hover(element) {
-        element.setAttribute('src', './images/products/'+element.id+'a.jpg');
+        element.setAttribute('src', './images/products/'+element.id+'A.jpg');
     }
 
 function unhover(element) {
@@ -15,10 +15,9 @@ $(function(){
         effect: 'fadeIn',
         effectTime: 500,
         afterLoad: function(element){
-            console.log("Loaded");
         },
         onError: function(element) {
-            console.log('error loading ' + element.data('src'));
+//            console.log('error loading ' + element.data('src'));
         }
     });    
 })
