@@ -9,3 +9,11 @@ function changeMainPhoto(number){
     }
     document.getElementById("small-gallery-photo"+number).style.filter = "brightness(0.6)";
 }
+
+function hover(element) {
+        element.setAttribute('src', 'images/products/'+element.id+'A.jpg');
+    }
+
+function unhover(element) {
+        element.setAttribute('src', 'images/products/'+element.id+'.jpg' );
+    }
