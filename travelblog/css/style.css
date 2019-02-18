@@ -1,0 +1,466 @@
+/**********     font sizes      ********/
+body, html {
+  font-size: 12px;
+}
+
+.aside-section{
+        font-size: 14px; 
+    }
+.navbar{
+        font-size:22px;
+    }
+
+@media (min-width:550px) {
+    body, html {
+    font-size: 14px;
+  }
+    .aside-section{
+        font-size: 16px; 
+    }
+    .navbar{
+        font-size:28px;
+    }
+}
+
+@media (min-width:768px) {  /*for md size in bootstrap*/
+    #bootstrapOverwrite .navbar{
+        background: rgba(1,1,1,0);
+    }
+}
+
+@media (min-width:900px) {
+    body, html  {
+    font-size: 16px;
+  }
+}
+/*
+
+@media (min-width:1000px) {
+  body {
+     Never get larger than this 
+    font-size: 18px;
+  }
+}
+*/
+
+
+
+/*********** general       **********/
+
+html, body{
+/*    height: 100%;  niekonieczne?*/
+/*    overflow-x:auto;*/
+}
+/***********  navigation  ***********/
+#pageNav{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar{
+/*    font-family: 'Black Forest Sans', monospace;*/
+    font-family: 'Amatic SC', cursive;
+/*    font-weight: bold;*/
+    font-size: 2.4rem;
+    text-align: center;
+    text-shadow: 2px 2px #fff;
+/*    background: white;*/
+}
+
+
+#bootstrapOverwrite .nav-link{
+    color: black;
+    width: 10rem;
+}
+
+.nav-link:hover{
+    font-size: 2.5rem;
+/*
+    text-decoration: underline;
+    text-decoration-color: #F5E64E;
+*/
+}
+
+/***********  header carousel  ***********/
+#pageHeader img{
+    width:100%;
+}
+
+.carousel-indicators li { visibility: hidden; }
+
+.carousel-control-next, .carousel-control-prev{
+    width: 10%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.carousel-caption{
+    display: none;
+    top: 50%;
+/*    transform: translate(0, -70%);*/
+}
+
+/*
+.carousel-caption h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+*/
+
+/*
+.carousel-caption .btn{
+    width: 300px;
+    font-size: 20px;
+    border: 2px solid white;
+}
+*/
+
+/*
+.header-button{
+    background: none;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 0px 0px 10px 3px #fff;
+}
+*/
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/***********    section headers    **********/
+.section-header{
+/*    height: 40px; Must be the same as font-size!*/
+/*    font-family: "Black Forest Sans";*/
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;  /*Must be the same as height!*/
+/*    line-height: 40px;*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+
+.section-header img{
+    margin-left: 3px;
+}
+
+.section-header span{
+    margin-right: 3px;
+}
+
+/***********    articles  **********/
+.article{
+    padding: 15px 10px 30px 0;
+}
+.article h1{
+    font-size: 2.7rem;
+    font-weight: 700; 
+    margin-bottom: 15px;
+}
+
+.article-header{
+    position: relative;
+}
+
+.article-date{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    position: absolute;
+    right:0;
+    bottom: 10%;
+    text-align: right;
+}
+
+.article-date time{
+    color: #3b719b;
+    white-space: nowrap;
+}
+
+.article img{
+    width: 100%;   
+}
+
+.article-image{
+    position: relative;
+}
+
+.article-comments{
+/*
+    background: url(../images/buttonImg3.png);
+    background-size: 100% 100%;
+*/
+    background: #3b719b;
+    color: #fff;
+    width: 100px;
+    height: 3.2rem;
+    position: absolute;
+    top: 5%;
+    left: -15px;
+    text-align: center;
+    line-height: 3rem;
+/*    font-family: 'Amatic SC', cursive;*/
+    font-size: 1.5rem;
+    border: none;
+}
+
+.article-comments:hover{
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.article-category{
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.article-category a{
+    color: #3b719b;
+}
+
+.article-category a:hover{
+    text-decoration: none;
+}
+
+.article-text{
+    font-size: 1.1rem;
+}
+
+.article .btn{
+    border-radius: 0;
+}
+
+.article-button{
+    background: url("../images/buttonImg2.png");
+    background-size: 100% 100%;
+    width: 200px;
+    height: 3.4rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.8rem;
+/*    text-align: left;*/
+}
+
+.article-button:hover{
+    font-size: 1.87rem;
+}
+
+/********** aside   **********/
+.aside-section{
+    margin-bottom: 35px;
+}
+
+aside .input-group-text{
+    width: 2.8rem;
+    background: #F5E650;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0 .7rem;
+}
+
+aside .input-group-text:hover{
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+#aboutMe img{
+     width: 100%; 
+}
+
+#aboutMe p{
+    margin-top: 10px;
+}
+
+#exploreMore ul{
+    margin-top:5px;
+}
+
+#exploreMore ul li{
+    padding: 10px 10px;
+/*    text-transform: uppercase;*/
+}
+
+#exploreMore a{
+    color: #000;
+    text-decoration: none;
+}
+
+#exploreMore a:hover{
+    color: #3b719b;
+    -webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+
+#exploreMore img{
+    margin-right: 5px;
+}
+
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+/*    min-height: 80vh;*/
+    height: 100%;
+/*    overflow: scroll;*/
+}
+
+/*
+#mainContent{
+    position: relative;
+    overflow:visible;
+}
+*/
+
+/**********     other posts    **********/
+
+#otherArticles{    
+    background: #F8F9FA;
+    padding: 0px 0 50px;
+    margin-top: 30px;
+}
+#otherArticles .section-header{
+    padding-top: 20px;
+}
+#otherArticles article{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+#otherArticles .other-articles-date{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    
+}
+
+#otherArticles h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+    min-height: 4.8rem;
+}
+
+#otherArticles .read-more{
+    font-family: 'Amatic SC', cursive;
+    background: #fff;
+    border: 1px solid #999;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+
+#otherArticles .read-more:hover{
+    background: #F8F9FA;
+}
+
+#otherArticles .article-comments{
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+#otherArticles .section-header{
+    margin-bottom: 20px;
+}
+
+#viewByCategory{
+    margin-top: 15px;
+}
+
+#viewByCategory div{
+    padding: 0 10px;
+}
+
+
+#viewByCategory button{
+    width: 100%;
+    background: #F5E64E;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.75rem;
+    padding-top: 0;
+}
+#viewByCategory button:hover{
+    font-size: 1.8rem;
+}
+
+#viewByCategory button, 
+#viewByCategory select{
+    width: 100%;
+    margin-top:5px;
+    height: 45px;
+    border-radius: 0;
+}
+
+/**********     media      ************/
+#mediaSection{
+    background: #555;
+    color: #000;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 10px;
+    color:white;
+}
+
+#mediaSection .media-header{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.social-media-icons a {	
+	display: inline-block;
+	padding: 0 10px 30px;
+}
+
+.social-media-icons a i{
+    font-size: 40px;
+     color:white;
+}
+
+
+
+/**********     media      ************/
+#pageFooter{
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left:10px;
+    padding-right: 10px;
+    background: #222;
+    color: #fff;
+}
+
+#pageFooter a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/***********    effects     ***********/
+/*
+.wavy-stripe{
+    height: 25px;
+    background: url("../images/shape.png");
+}
+*/
+
+/*
+.wavy-stripe-reversed{
+    height: 25px;
+    background: url("../images/shapeReversed.png");
+}
+*/

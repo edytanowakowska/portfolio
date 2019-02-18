@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fast Travel | Blog for adventurers!</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+       
+    <link href="javascript/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link href="javascript/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+</head>
+<body id="bootstrapOverwrite">
+    
+    <nav class="navbar navbar-expand-md navbar-light" id="pageNav">
+        <a class="navbar-brand d-inline d-md-none" href="#"><img src="images/logoC.png" alt="Page logo" height="70" width="70"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"  aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navLinks">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My book</a>
+                </li>
+                <a class="navbar-brand d-none d-md-inline" href="#"><img src="images/logoC.png" alt="Page logo" height="150" width="150"></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Travel guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header id="pageHeader">
+        <div id="headerSlides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#headerSlides" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlides" data-slide-to="1"></li>
+                <li data-target="#headerSlides" data-slide-to="2"></li>
+                <li data-target="#headerSlides" data-slide-to="3"></li>
+            </ul>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/cropped/gallery4.jpg" alt="photo"  class="img-fluid" width="1300" height="900">
+                    <div class="carousel-caption">
+                        <h1>Nature camping adventure</h1>
+                        <p>Pellentesque id maximus odio. Proin id nunc enim. Sed lacinia lacus a nisi viverra, quis rhoncus est sagittis. Proin eget laoreet arcu. Integer non sem blandit</p>
+                        <button type="button" class="btn header-button">READ MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cropped/gallery7.jpg" alt="photo"  class="img-fluid" width="1300" height="900">
+                    <div class="carousel-caption">
+                        <h1>Brasil - the place of extremes</h1>
+                        <p>Pellentesque id maximus odio. Proin id nunc enim. Sed lacinia lacus a nisi viverra, quis rhoncus est sagittis. Proin eget laoreet arcu. Integer non sem blandit</p>
+                        <button type="button" class="btn header-button">READ MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cropped/gallery9.jpg" alt="photo"  class="img-fluid" width="1300" height="900">
+                    <div class="carousel-caption">
+                        <h1>Venice not for scrooges</h1>
+                        <p>Pellentesque id maximus odio. Proin id nunc enim. Sed lacinia lacus a nisi viverra, quis rhoncus est sagittis. Proin eget laoreet arcu. Integer non sem blandit</p>
+                        <button type="button" class="btn header-button">READ MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cropped/gallery1.jpg" alt="photo" class="img-fluid" width="1300" height="900">
+                    <div class="carousel-caption">
+                        <h1>The city in the jungle</h1>
+                        <p>Pellentesque id maximus odio. Proin id nunc enim. Sed lacinia lacus a nisi viverra, quis rhoncus est sagittis. Proin eget laoreet arcu. Integer non sem blandit</p>
+                        <button type="button" class="btn header-button">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#headerSlides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    
+    </header>
+    
+    <div class="container">
+        <div class="row" id="mainContent">
+            <main class="col-lg-8">
+                <div class="section-header">
+                    <span>My blog</span>
+                    <img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">
+                    <img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">
+                </div>
+                <article class="article">
+                    <div class="article-header row">
+                        <h1 class="col-9">The wildest city in the jungle</h1>
+                        <span class="article-date col-3">POSTED: <time datetime="2018-01-16">Feb 16</time></span>
+                    </div>
+                   
+                    <div class="article-image">         <img src="images/gallery6.jpg" alt="jungle photo">
+                         <button class="article-comments" type="button">5 <i class="far fa-comment"></i></button>
+                    </div>
+                    <div class="article-category">
+                        Posted in: <em><a href="">Travel guides</a>, <a href="">New Discovery</a></em>
+                    </div>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere est eu pharetra mollis. Aliquam eget felis iaculis, finibus mauris varius, tempor tortor. Quisque mauris quam, euismod ac finibus maximus, scelerisque vitae metus.</p>
+                        <p>Nam venenatis, mi non laoreet luctus, lorem metus feugiat justo, eu blandit lectus augue a arcu. Proin scelerisque risus vel tristique euismod...  </p>
+                    </div>
+                    <button type="button" class="btn  article-button">READ MORE >></button>
+                </article>
+                 <article class="article">
+                    <div class="article-header row">
+                        <h1 class="col-9">One gudie for all your hiking trips</h1>
+                        <span class="article-date col-3">POSTED: <time datetime="2018-01-16">Feb 10</time></span>
+                    </div>
+                   
+                    <div class="article-image">         <img src="images/gallery5.jpg" alt="jungle photo">
+                         <button class="article-comments" type="button">8 <i class="far fa-comment"></i></button>
+                    </div>
+                    <div class="article-category">
+                        Posted in: <em><a href="">Travel guides</a></em>
+                    </div>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere est eu pharetra mollis. Aliquam eget felis iaculis, finibus mauris varius, tempor tortor. Quisque mauris quam, euismod ac finibus maximus, scelerisque vitae metus.</p>
+                        <p>Nam venenatis, mi non laoreet luctus, lorem metus feugiat justo, eu blandit lectus augue a arcu. Proin scelerisque risus vel tristique euismod...  </p>
+                    </div>
+                    <button type="button" class="btn  article-button">READ MORE >></button>
+                </article>
+                 <article class="article">
+                    <div class="article-header row">
+                        <h1 class="col-9">The noisy life in NY</h1>
+                        <span class="article-date col-3">POSTED: <time datetime="2018-01-16">Dec 21</time></span>
+                    </div>
+                   
+                    <div class="article-image">         <img src="images/gallery14.jpg" alt="jungle photo">
+                         <button class="article-comments" type="button">12 <i class="far fa-comment"></i></button>
+                    </div>
+                    <div class="article-category">
+                        Posted in: <em><a href="">Personal Thoughts</a>, <a href="">New Discovery</a></em>
+                    </div>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere est eu pharetra mollis. Aliquam eget felis iaculis, finibus mauris varius, tempor tortor. Quisque mauris quam, euismod ac finibus maximus, scelerisque vitae metus.</p>
+                        <p>Nam venenatis, mi non laoreet luctus, lorem metus feugiat justo, eu blandit lectus augue a arcu. Proin scelerisque risus vel tristique euismod...  </p>
+                    </div>
+                    <button type="button" class="btn  article-button">READ MORE >></button>
+                </article>
+                 <article class="article">
+                    <div class="article-header row">
+                        <h1 class="col-9">Rediscovering water sports</h1>
+                        <span class="article-date col-3">POSTED: <time datetime="2018-01-16">Dec 12</time></span>
+                    </div>
+                   
+                    <div class="article-image">         <img src="images/gallery2.jpg" alt="jungle photo">
+                         <button class="article-comments" type="button">3 <i class="far fa-comment"></i></button>
+                    </div>
+                    <div class="article-category">
+                        Posted in: <em><a href="">Personal Thoughts</a>, <a href="">Sports</a></em>
+                    </div>
+                    <div class="article-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere est eu pharetra mollis. Aliquam eget felis iaculis, finibus mauris varius, tempor tortor. Quisque mauris quam, euismod ac finibus maximus, scelerisque vitae metus.</p>
+                        <p>Nam venenatis, mi non laoreet luctus, lorem metus feugiat justo, eu blandit lectus augue a arcu. Proin scelerisque risus vel tristique euismod...  </p>
+                    </div>
+                    <button type="button" class="btn  article-button">READ MORE >></button>
+                </article>
+            </main>   
+            <aside class="col-lg-4 sticky">
+                <div class="aside-section" id="aboutMe">
+                    <div class="section-header">
+                        <span>About me</span>
+                    </div>
+                    <img src="images/aboutMe.jpg" alt="about me photo">
+                    <p>Proin id mi elementum, mollis est a, efficitur quam. Mauris at tellus in metus feugiat ultricies a eget lacus. Duis ut odio vel velit cursus placerat.</p>
+                </div>
+                
+                <div class="aside-section">
+                    <div class="section-header">
+                        <span>Join mailing list</span>
+                    </div>
+                    <p>Quisque mauris quam, euismod ac finibus maximus, scelerisque vitae metus. 
+                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="your@email.com">
+                            <div class="input-group-append">
+                                 <a href="" class="input-group-text"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="aside-section" id="exploreMore">
+                    <div class="section-header">
+                        <span>Worth  reading</span>
+                    </div>
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action"> <img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">Most popular posts</a>
+                        <a href="" class="list-group-item list-group-item-action"><img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">Collaborations</a>
+                       <a href="" class="list-group-item list-group-item-action"><img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">The ultimate guide of travel</a>
+                        <a href="" class="list-group-item list-group-item-action"><img src="images/elements/element-15.png" width="20" height="20" alt="decoration element">Archives</a>
+                    </div>
+                </div>
+                
+            </aside>
+
+        </div>
+    </div><!-- end of container -->
+   
+    <div id="otherArticles">
+
+        <div class="container">
+            <div class="section-header">
+                    <span>Explore more  of my blog</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery3.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">3 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>Back to the city</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">Nov 28</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+                 <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery13.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">4 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>The secret of Venice</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">Nov 5</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+                 <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery15.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">8 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>Sacred temple in Vietnam</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">OCT 23</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery10.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">12 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>The vehicle of dreams</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">Oct 19</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+                 <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery11.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">1 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>Crazy tour through the mountains</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">Oct 8</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+                 <div class="col-lg-4 col-sm-6">
+                     <article class="article">
+                        <div class="article-image">         <img src="images/gallery12.jpg" alt="jungle photo">
+                             <button class="article-comments" type="button">7 <i class="far fa-comment"></i></button>
+                        </div>
+
+                        <h2>Near the ocean</h2>
+                        <span class="other-articles-date">POSTED: <time datetime="2018-01-16">SEPT 29</time></span>
+
+                        <button type="button" class="btn read-more float-right">>></button>      
+                    </article>
+                </div>
+            </div>
+            <div id="viewByCategory">
+                <form class="row form-inline">
+                    <div class="col-sm-1 col-lg-3"></div>
+                    <div class="col-sm-5 col-lg-3">
+                        <select class="form-control">
+                            <option value="volvo">Travel Guides</option>
+                            <option value="saab">New Discovery</option>
+                            <option value="mercedes">Personal Thoughts</option>
+                            <option value="audi">Sports</option>
+                            <option value="volvo">Africa</option>
+                            <option value="volvo">Europe</option>
+                            <option value="volvo">North Amrica</option>
+                            <option value="volvo">South Amrica</option>
+                            <option value="volvo">Australia</option>
+                            <option value="volvo">Asia</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-5 col-lg-3">     <button type="button" class=" btn">View By Categiory >></button>
+                    </div>
+                    <div class="col-sm-1 col-lg-3"></div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div id="mediaSection">
+        <div class="media-header">
+            Follow Me On:
+        </div>
+        <div class="social-media-icons">
+                <div class="list-inline">
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-youtube-square"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-square"></i></a>       
+                </div>
+        </div>
+<!--
+        <div class="wavy-stripe">
+        </div>
+-->
+    </div>
+    
+    <footer id="pageFooter">
+        <span class="copyright-text">&copy; 2018 - Fast Travel</span>
+        <a href="" class="float-right">Policy Page</a>
+        <a href="" class="float-right">Contact Us </a>
+
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script> window.jQuery || document.write('<script src="javascript/jquery-3.3.1.js"><\/script>'); </script>
+    <script src="javascript/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body, html{
+    height: 100%;
+}
+
+/*      font sizes      */
+body, html  {
+    font-size: 12px;
+}
+
+@media (min-width:576px) {
+    body, html {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px) {
+    body, html {
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width:992px) {
+    body, html  {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    body, html  {
+        font-size: 17px;
+    }
+}
+
+
+/*  hero text placement     */
+.hero-text{
+     left: 12%;
+}
+
+@media (min-width:1440px) {
+    .hero-text{
+        right: 50%;
+        left: auto;
+    }
+}
+
+/*  smaller and center links for collapsed menu  */ 
+@media (max-width:575px){
+    #main-nav{ 
+        a.nav-link{
+            text-align: center;
+            width: auto;
+            display: inline-block;
+        }
+        
+        li.nav-item{
+            text-align: center;
+        }
+        
+    }
+}
+
+/*  project images changeing widths  (100% when < sm, 95% >sm)  */
+#my-projects img{
+    width: 100%;
+}
+
+@media (min-width:768px){
+    #my-projects img{
+        width: 95%;
+    }
+}
+
+/*smaller margin for p in project descriptio  when <=md screen*/
+@media (min-width:768px){
+    #my-projects p{
+    margin-bottom: 0.5rem;
+    }
+}
+
+
+@media (max-width:768px){
+    #my-projects .project-row{
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-bottom:20px;
+//        border-bottom: 1px solid #aaa;
+    }
+    
+    #my-projects{
+        padding-bottom: 0;
+    }
+    
+    #about-me{
+        padding-top:40px;
+        padding-bottom: 0;
+    }
+}
+

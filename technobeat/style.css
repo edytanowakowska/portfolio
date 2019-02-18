@@ -1,0 +1,549 @@
+html{
+	height: 100%; /*for paralax effect*/
+}
+body {
+	height: 100%; /*for paralax effect*/
+	margin: 0;
+	padding: 0;
+	background-color:  #162125;
+	color: #D5D5DD;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+h1, h2, h3, h6{
+	font-family: 'Oswald', sans-serif;;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+h1{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom:40px;
+}
+
+h2{
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+h3{
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+
+h6{
+	color: #D5D5DD;
+}
+/**OTHER**/
+
+/*MENU**************************/
+
+.menu{
+	position: fixed;
+	width: 100%;
+	/*background: rgb(22, 33, 37);
+    background: rgba(22, 33, 37, 0.6);*/
+	background-color: #162125;
+	z-index : 1;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0px 0 0 0px;
+	vertical-align: bottom;
+	text-align: right;
+	/*transition: background-color .3s;*/
+}
+
+
+.active{
+ color: #96D1CC;
+ text-decoration: underline;
+ pointer-events: none;
+ cursor: default;
+}
+
+/*
+.active:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 22px;
+	left: 0;
+	background-color: #EDEDEE;
+	visibility: hidden;
+	transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+}
+*/
+
+ nav li {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;  /*'Allerta Stencil';*/
+	/*font-family: 'Oswald', sans-serif;*/
+    line-height: 70px;
+     vertical-align: middle;
+    }
+
+nav a {
+	text-decoration: none;
+	display: block;
+	float: left;
+	color: #EDEDEE;
+	width: auto;
+	height: 70px;
+	margin: 0px 15px 0px 15px;
+	font-size: 1.3em;
+	position:relative;
+}
+
+nav .horizontalMenu a:hover {
+	color:  #EDEDEE; /*#45FEE2;*/
+	text-decoration: none;
+}
+
+nav .horizontalMenu a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 22px;
+	left: 0;
+	background-color: #EDEDEE;
+	visibility: hidden;
+    
+    transition:none;
+	transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+	transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+}
+
+nav .horizontalMenu a:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    
+}
+
+
+nav .logo img{
+	width: auto;
+	height: 70px;
+}
+
+nav .logo{
+	/*margin-right: 400px;*/
+	margin: auto;
+}
+
+/**Menu - changing display on smaller screens*/
+nav .menuIcon img{
+	height: 70px;
+}
+nav .menuIcon{
+		float: right;
+}
+nav .menuIcon img:hover{
+	 cursor: pointer;
+}
+
+
+nav .verticalMenu ul li{
+	width:100%;
+  text-align: center;
+	  line-height: 50px;
+
+}
+
+nav .verticalMenu a{
+	float:none;
+	height: 50px;
+}
+
+nav .verticalMenu a:hover{
+ color: #96D1CC;
+ text-decoration: none
+}
+
+
+
+.hidden{
+	display: none;
+}
+
+
+
+
+/*BACKGROUND AND PARALLAX***************************************/
+
+.parallax {
+    /* Full height */
+    height: 80%;
+    /* Create the parallax scrolling effect */
+
+		background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#festivalAnch .parallax{
+	height: 600px;
+}
+
+#ticketsAnch .parallax{
+	height:600px;
+}
+.photo1{
+	 background-image: url("images/photo1.jpg");
+}
+
+
+.photo2{
+	 background-image: url("images/photo2.jpg");
+}
+
+.photo3{
+	 background-image: url("images/photo3.jpg");
+}
+
+.caption{
+	position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+@media (max-width:415px){
+    .caption{
+        font-size: 15px;
+    }
+}
+
+
+.caption span.borderr {
+	background: rgb(22, 33, 37);
+    background: rgba(22, 33, 37, 0.6);
+    padding: 18px;
+    letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+
+/*ARTISTS**********/
+
+section .artistPhoto img{
+	max-width:230px;
+	max-height:230px;
+	width: 100%;
+	height: 100%;
+}
+
+section .photosOfArtists {
+	text-align:center;
+	margin: 0 auto;
+}
+
+
+/**GEUESTBUTTON SECTION***/
+.guestBtnDiv h1 {
+	color: #162125;
+	padding-top:30px;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 991px){
+    .guestBtnDiv h1 {
+        font-size: 2rem;
+    }
+}
+
+.guestBtnDiv h1 {
+	color: #162125;
+	padding-top:30px;
+}
+
+.guestBtnDiv .textInGuests{
+	color: #162125;
+	margin:auto;
+	max-width:500px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+
+.guestBtnDiv .textInGuests p{
+	text-align:center;
+	margin: 0 auto;
+}
+.guestBtnDiv{
+	display: block;
+	height: auto;
+	background-color: #96D1CC;
+	padding-bottom: 60px;
+}
+
+.seeGuestsBtn{
+	width: 226px;
+	margin:auto;
+	padding: 0px 20px;
+	border: solid 2px #162125;
+	transition: background-color .5s;
+    -webkit-transition:  background-color .5s;
+    -moz-transition:  background-color .5s;
+    -o-transition:  background-color .5s;
+    text-align: center;
+}
+.seeGuestsBtn a{
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 46px;
+	color: #162125;
+}
+.seeGuestsBtn:hover{
+	background-color: #162125;
+}
+
+.seeGuestsBtn:hover a{
+	color: #FFFFFF;
+}
+
+
+/*HISTORY*************/
+.rightCol img{
+	max-width: 550px;
+	width: 100%;
+	height: auto;
+}
+
+.leftCol p{
+	  color:#D5D5DD;
+}
+
+.historyTitle{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.readMoreLink a{
+	max-width: 200px;
+	height: 50px;
+	display: block;
+	float:left;
+	text-decoration: none;
+	color: #FFFFFF;
+	height: 50px;
+	font-size: 1.3em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.readMoreLink a:hover{
+	color:#96D1CC;
+}
+
+.readMoreLinkLine {
+    display: block;
+    float:left;
+    width: 30px;
+    height: 2px;
+    content: "";
+    background:#96D1CC;
+    margin:17px 10px;
+}
+
+.festivalSec{
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+
+.spaceBelow{
+	padding-bottom:20px;
+}
+/**NEWS**/
+.news article{
+	margin-top:20px;
+}
+
+/**TICKETS**/
+.tickets h2{
+	color: #162125;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.tickets{
+	height: auto;
+	padding-bottom: 60px;
+}
+.tickets .textInTickets{
+	color: #162125;
+	margin:auto;
+	max-width:300px;
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+
+.tickets .textInTickets p{
+	text-align:center;
+	margin: 0 auto;
+}
+
+.tickets .seeGuestsBtn{
+	width: 140px;
+    text-align: center;
+}
+/**LAST EDITIONS***/
+/*
+.lastEditions{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+*/
+.lastEditions h1{
+	margin-bottom: 0;
+}
+.slideShow {
+	position:relative;
+	margin: auto;
+	max-width: 1000px;
+	margin-top: 5px;
+}
+.slideShow img{
+	width: 100%;
+}
+.slides{
+	display:none;
+}
+.showMe{
+	display: block;
+}
+.slides .number{
+	position: absolute;
+	padding: 8px 12px;
+	color: #f2f2f2;
+}
+
+.prev,.next{
+	position:absolute;
+	top: 45%;
+	color: #f2f2f2;
+	font-weight: bold;
+	padding: 10px 10px;
+	font-size: 30px;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+}
+
+.next{
+	border-radius: 3px 0 0 3px;
+	right:15px;
+}
+
+.prev:hover,.next:hover{
+	background: rgba(0,0,0,0.7);
+}
+
+.sliderDots{
+	text-align: center;
+}
+
+.dots{
+	margin: 20px 2px;
+	width: 15px;
+	height: 15px;
+	display:inline-block;
+	background: gray;
+	padding: 7px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 0.5s;
+	opacity: 1;
+}
+@keyframes fade{
+		from{opacity: 0.4}
+		to{opacity: 1}
+}
+
+.activeDot, .dots:hover{
+	background: #96D1CC;
+}
+
+.activeDot{
+		cursor: default;
+}
+
+/**FOOTER**/
+footer{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+footer span{
+	margin-left: 2px;
+	font-weight: bold;
+	word-spacing: 2px;
+}
+footer .footerText{
+    margin-left:1%;
+	width:49%;
+}
+
+footer .icons{
+	width:50%;
+}
+footer .icon{
+	height:30px;
+	width: 30px;
+	margin-left: 30px;
+	float:right;
+}
+
+@media(max-width:415px){
+    footer .icon{
+	height:20px;
+	width: 20px;
+    margin-left: 20px;
+    }
+    
+    .footerText h5{
+        font-size: 1rem;
+    }
+}
+
+footer .icon img{
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	display: block;
+}
+
+footer .icon img:hover{
+	cursor: pointer;
+	width:100%;
+	height:100%;
+}
+
+footer .footerDiv{
+	padding-left: 0;
+	padding-right: 0;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myyours Street Fashion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--        Normalize       -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!--        Styles          -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--        Fonts           -->
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+    <!--        Icons       -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->  
+
+    <meta name="description" content="MYYOURS Street fashion for your daily adventures">
+    
+    <script>
+    function hover(element) {
+        element.setAttribute('src', 'images/products/'+element.id+'a.jpg');
+        console.log('images/products/"'+element.id+'a.jpg');
+    }
+
+    function unhover(element) {
+        element.setAttribute('src', 'images/products/'+element.id+'.jpg' );
+    }
+    </script>
+</head>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li id="logo">
+                <a href="./index.html">
+                    <img src="images/logo.jpg" alt="MYYOURS logo">
+                </a>
+            </li>
+            <li class="left-menu-links dropdown-link" id="her-menu">
+                <a href="her.html"><span>For her</span></a>
+                    <nav class="dropdown-content">
+                        <h4>Clothes</h4>
+                        <a href="her.html">T-shirts</a>
+                        <a href="her.html">Sweaters</a>
+                        <a href="her.html">Blouses</a>
+                        <a href="her.html">Skirts</a>
+                        <a href="her.html">Dresses</a>
+                        <a href="her.html">Sweatpants</a>
+                        <a href="her.html">Sweatshirts</a>
+                        <a href="her.html">Jeans &amp; Trousers</a>
+                        <a href="her.html">Coats</a>
+                        <h4>Accessories</h4>
+                        <a href="her.html">Shoes</a>
+                        <a href="her.html">Bags</a>
+                        <a href="her.html">Hats &amp; Scarfs</a>
+                        <a href="her.html">Jewlery</a>
+                        <a href="her.html">Underwear</a>
+                        <a href="her.html">Socks</a>
+                    </nav>
+            </li>
+            <li class="left-menu-links dropdown-link" id="him-menu">
+                   <a href="her.html"><span>For him</span></a>
+                    <nav class="dropdown-content">
+                        <h4>Clothes</h4>
+                        <a href="her.html">T-shirts</a>
+                        <a href="her.html">Sweatshirts</a>
+                        <a href="her.html">Shirts</a>
+                        <a href="her.html">Sweatpants</a>
+                        <a href="her.html">Coats</a>
+                        <a href="her.html">Jeans &amp; Trousers</a>
+                        <a href="her.html">Jumpers</a>
+                        <h4>Accessories</h4>
+                        <a href="her.html">Shoes</a>
+                        <a href="her.html">Underwear</a>
+                        <a href="her.html">Socks</a>
+                        <a href="her.html">Bags</a>
+                        <a href="her.html">Hats &amp; Scarfs</a>
+                        <a href="her.html">Watches</a>
+                    </nav>
+            </li>
+            <div id="right-side-container">
+                <li class="right-menu-links">
+                    <a href="">
+                       <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="right-menu-links">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </li>
+                <a href="">
+                    <li class="right-menu-links" id="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </li>
+                </a>
+            </div>
+        </ul>
+    </nav>
+    <main id="main-container" class="main-website">
+        <section id="chosen-product-section">
+            <section id="chosen-main-photo">
+                <img src="images/product/product1.jpg" alt="product photo" id="main-photo">
+            </section>
+            <section id="chosen-small-gallery">
+                <img src="images/product/product1.jpg" alt="product photo" id="small-gallery-photo1" class="shown-photo" onclick="changeMainPhoto(1)">
+                <img src="images/product/product2.jpg" alt="product photo" id="small-gallery-photo2"  onclick="changeMainPhoto(2)">
+                <img src="images/product/product3.jpg" alt="product photo" id="small-gallery-photo3"  onclick="changeMainPhoto(3)">
+                <img src="images/product/product4.jpg" alt="product photo" id="small-gallery-photo4"  onclick="changeMainPhoto(4)">
+                <img src="images/product/product5.jpg" alt="product photo" id="small-gallery-photo5" onclick="changeMainPhoto(5)">
+            </section>
+            <section id="chosen-info">
+                <a href="her.html"><button class="btn basic-button return-button"><i class="fas fa-long-arrow-alt-left"></i> return</button></a>
+                <h2>Oversized gray golf</h2>
+                <p id="chosen-price">89,99 PLN</p>
+                <div id="chosen-description">
+                    <p class="basic-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer condimentum auctor mi at fermentum. Ut interdum congue ex, eu condimentum arcu ultrices eu. Vivamus viverra risus ex, ultricies cursus odio commodo eget. Vestibulum et feugiat arcu.</p>
+                    <p class="basic-description padding-top-15"><span class="font-weight-normal">Height of the model:</span> 178cm</p>
+                    <p class="basic-description"><span class="font-weight-normal">Size on image:</span> M</p>
+                </div>
+                <div id="chosen-info-medium">
+                        <div id="chosen-size-color-options">
+                            <h3>Color:</h3> 
+                            <div class="chosen-square background-color-black">h</div>
+                            <div class="chosen-square background-color-blue">h</div>
+                            <div class="chosen-square background-color-red">h</div><br>
+                             <div id="sizes">
+                                 <h3>Size:</h3>
+                                <div class="chosen-square">S</div>
+                                <div class="chosen-square">M</div>
+                                <div class="chosen-square">L</div>
+                                <div class="chosen-square">XL</div>
+                                <span id="size-table" class="medium-info-link">Size table <i class="fas fa-angle-right"></i></span>
+                            </div>
+                        </div>
+                        <button class="btn basic-button add-button">Add to cart  <i class="fas fa-shopping-cart"></i></button>
+                        <a href=""  class="medium-info-link">Product Info <i class="fas fa-angle-right"></i></a>
+                        <a href=""  class="medium-info-link">Returns <i class="fas fa-angle-right"></i></a>
+                        <a href=""  class="medium-info-link">Shipping <i class="fas fa-angle-right"></i></a>
+                </div>
+                
+                <div id="chosen-info-bottom">
+                    <h3> <i class="far fa-calendar-alt"></i> 30 days refund policy</h3>
+                    <h3> <i class="fas fa-box-open"></i> Free shipping</h3>
+                </div>
+            </section>
+        </section>
+        <section id="see-also-section">
+            <h2> See also</h2>
+            <section id="product-gallery">
+                <div class="product-cell">
+                    <a href="./product.html"><img src="images/products/product13.jpg" alt="product photo" width="817" height="1090" id="product13" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <p class="product-price">89,99 PLN</p>
+                    <p class="product-description">Black hoodie</p></a>
+                </div>
+                <div class="product-cell">
+                    <a href="./product.html"><img src="images/products/product14.jpg" alt="product photo" width="817" height="1090" id="product14" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <p class="product-price">69,99 PLN</p>
+                    <p class="product-description">Blue jacket with zipper</p></a>
+                </div>
+                <div class="product-cell">
+                    <a href="./product.html"><img src="images/products/product15.jpg" alt="product photo" width="817" height="1090" id="product15" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <p class="product-price">59,99 PLN</p>
+                    <p class="product-description">Red patterned seater</p></a>
+                </div>
+                <div class="product-cell">
+                    <a href="./product.html"><img src="images/products/product16.jpg" alt="product photo" width="817" height="1090" id="product16" onmouseover="hover(this);" onmouseout="unhover(this);">
+                    <p class="product-price">109,99 PLN</p>
+                    <p class="product-description">Gray sweater</p></a>
+                </div>
+            </section>
+        </section>
+    </main><!-- end of main-container-->
+    <footer>
+        <div id="footer-container">
+            <section id="contuct-us" class="footer-column">
+                <h3>CONTACT US</h3>
+                <p>tel. (012) 652 34 44</p>
+                <p>mail: myyours@comp.com</p><br>
+                <p>ul. Fiołkowa 12</p>
+                <p>30-876 Kraków</p>
+            </section>
+            <nav id="information" class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">History</a></li>
+                    <li><a href="">Our partners</a></li>
+                    <li><a href="">Size Table</a></li>
+                    <li><a href="">Map</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Terms &amp; Conditions</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
+             <nav id="payment" class="footer-column">
+                <h3>PAYMENT/DELIVERY</h3>
+                <ul>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Delivery</a></li>
+                    <li><a href="">Payment</a></li>
+                    <li><a href="">Transacitons terms</a></li>
+                    <li><a href="">Gift cards</a></li>
+                </ul>
+            </nav>
+            <section id="newsletter" class="footer-column">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="your mail address" required id="newsletter-mail">
+                    <button type="submit" id="send-newsletter"><i class="fas fa-arrow-right"></i></button>
+                    <br>
+                    <input type="checkbox" name="has-accepted" required id="has-accepted-checkbox">
+                    <small>I accept the terms &amp; conditions of the newsletter</small>
+                </form>
+
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a href="./index.html">
+                        <li>
+                            <i class="fab fa-youtube"></i>
+                        </li>
+                    </a>
+                    <a href="./index.html">
+                        <li>
+                            <i class="fab fa-pinterest"></i>
+                        </li>
+                    </a>
+                    <a href="./index.html">
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                    </a>
+                </ul>
+            </section>
+            <section id="copyright">
+            <small>MyYours &copy; 2017 Wszelkie prawa zastrzeżone</small>
+            </section>
+        </div> <!--end of footer-container-->
+    </footer>
+    <script src="scripts/product.js"></script>
+</body>
+</html>

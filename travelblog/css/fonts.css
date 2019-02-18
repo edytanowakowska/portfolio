@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+@font-face {
+font-family: "Black Forest Sans";
+src: url("css/fonts/black-forest/BlackForestSans.ttf");
+/*src: url("css/fonts/black-forest/BlackForestSans.otf") format("opentype");*/
+}
+
+@font-face {
+font-family: "Sarabun";
+src: url("css/fonts/sarabun/Sarabun-Regular.ttf");
+/*src: url("css/fonts/black-forest/BlackForestSans.otf") format("opentype");*/
+}
+

@@ -1,0 +1,28 @@
+footer{
+    color: #fff;
+    background: $bg-dark;
+    margin-top:50px;
+//    padding-top:3rem;
+    padding-bottom:8rem;
+    
+    p{
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+    
+    a.email{
+        font-weight: 400;
+        text-decoration: none;
+        color: $header-color-lighter;
+    }
+    
+    .blue-strip{
+        background: $header-color;
+        height:50px;
+    }
+    
+    .main-header{
+        padding-top:50px;
+    }
+        
+}

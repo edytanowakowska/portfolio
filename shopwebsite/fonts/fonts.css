@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('caviar_dreams/CaviarDreams-webfont.eot');
+    src:
+        url('caviar_dreams/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+/*         url('caviar_dreams/CaviarDreams-webfont.woff2') format('woff2'),*/
+         url('caviar_dreams/CaviarDreams-webfont.woff') format('woff'),
+         url('caviar_dreams/CaviarDreams-webfont.ttf') format('truetype'),
+         url('caviar_dreams/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica'), url('helvetica/Helvetica.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Oblique'), url('helvetica/Helvetica-Oblique.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica'), url('helvetica/Helvetica-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Bold Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Bold Oblique'), url('helvetica/Helvetica-BoldOblique.woff') format('woff');
+}
+
+/*
+@font-face {
+font-family: 'Helvetica Light';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Light'), url('helvetica/helvetica-light-587ebe5a59211.woff') format('woff');
+}
+*/
+
+@font-face {
+font-family: 'Helvetica Light';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Light'), url('helvetica/HelveticaLt.ttf') format('truetype');
+}

@@ -1,0 +1,51 @@
+#main-nav{
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    
+    .navbar-toggler{
+        color: #fff;
+    }
+    
+    .navbar-brand{
+        font-family: $logo-font;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .nav-item{
+        padding-left: .5rem;
+    }
+    
+    .nav-link{
+        font-family: $header-font;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: #fff;
+        position: relative;
+        padding-left:0;
+        padding-right:0;
+        padding-bottom: .3rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    
+    .nav-link:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        @include crossBrowser(transform,  scaleX(0));
+        @include crossBrowser(transition, all 0.15s ease-in-out 0s);
+    }
+    
+    .nav-link:hover:before{
+        visibility: visible;
+        @include crossBrowser(transform, scaleX(1));
+    }
+}
