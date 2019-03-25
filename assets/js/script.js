@@ -24,9 +24,9 @@ $(function(){
     //showing different photos when hovering on project images
     $('.project-image-link').hover(
         function(){
-            $(this).children("img").attr("src", $(this).children("img").attr("src").replace(".png","alternative.png"));
+            $(this).children("img").attr("src", $(this).children("img").attr("src").replace(".jpg","alternative.jpg"));
         }, function(){
-            $(this).children("img").attr("src", ($(this).children("img").attr("src").replace("alternative.png",".png")));
+            $(this).children("img").attr("src", ($(this).children("img").attr("src").replace("alternative.jpg",".jpg")));
         }
     );
     
